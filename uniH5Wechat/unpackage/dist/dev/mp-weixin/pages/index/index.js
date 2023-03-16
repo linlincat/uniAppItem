@@ -4,13 +4,19 @@ if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
   const _easycom_uni_search_bar2 = common_vendor.resolveComponent("uni-search-bar");
   const _easycom_uni_swiper_dot2 = common_vendor.resolveComponent("uni-swiper-dot");
-  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_swiper_dot2)();
+  const _easycom_m_tag2 = common_vendor.resolveComponent("m-tag");
+  const _easycom_uni_col2 = common_vendor.resolveComponent("uni-col");
+  const _easycom_uni_row2 = common_vendor.resolveComponent("uni-row");
+  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_swiper_dot2 + _easycom_m_tag2 + _easycom_uni_col2 + _easycom_uni_row2)();
 }
 const _easycom_uni_icons = () => "../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
 const _easycom_uni_search_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.js";
 const _easycom_uni_swiper_dot = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot.js";
+const _easycom_m_tag = () => "../../components/m-tag/m-tag.js";
+const _easycom_uni_col = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-col/uni-col.js";
+const _easycom_uni_row = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row.js";
 if (!Math) {
-  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_swiper_dot)();
+  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_swiper_dot + _easycom_m_tag + _easycom_uni_col + _easycom_uni_row)();
 }
 const _sfc_main = {
   __name: "index",
@@ -75,6 +81,47 @@ const _sfc_main = {
           mode: mode.value,
           ["dots-styles"]: dotsStyle,
           field: "content"
+        }),
+        h: common_vendor.p({
+          ["tag-title"]: "精美猫咪",
+          ["tag-descript"]: "长毛猫、短毛猫、无毛猫"
+        }),
+        i: common_vendor.p({
+          span: 12
+        }),
+        j: common_vendor.p({
+          ["tag-title"]: "猫咪套图",
+          ["tag-descript"]: "热门+精选+新图"
+        }),
+        k: common_vendor.p({
+          span: 12
+        }),
+        l: common_vendor.p({
+          gutter: 20
+        }),
+        m: common_vendor.p({
+          ["tag-title"]: "发现",
+          ["tag-descript"]: "发现有趣的文章"
+        }),
+        n: common_vendor.p({
+          span: 8
+        }),
+        o: common_vendor.p({
+          ["tag-title"]: "任务",
+          ["tag-descript"]: "给自己定的小目标"
+        }),
+        p: common_vendor.p({
+          span: 8
+        }),
+        q: common_vendor.p({
+          ["tag-title"]: "省钱",
+          ["tag-descript"]: "东南西北风"
+        }),
+        r: common_vendor.p({
+          span: 8
+        }),
+        s: common_vendor.p({
+          gutter: 20
         })
       };
     };

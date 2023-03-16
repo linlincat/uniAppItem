@@ -19,6 +19,45 @@
 					</swiper-item>
 				</swiper>
 			</uni-swiper-dot>
+			<!-- 微信小程序渲染没有外部包围 - 外层添加一个view标签 -->
+			<view class="m-uni-row">
+				<uni-row :gutter="20">
+					<uni-col :span="12">
+						<view class="m-tag-two one-color">
+							<m-tag tag-title="精美猫咪" tag-descript="长毛猫、短毛猫、无毛猫"></m-tag>
+						</view>
+					</uni-col>
+					<uni-col :span="12">
+						<view class="m-tag-two two-color">
+							<m-tag tag-title="猫咪套图" tag-descript="热门+精选+新图"></m-tag>
+						</view>
+					</uni-col>
+				</uni-row>
+			</view>
+			<view class="m-uni-row" style="margin-top: 20rpx;">
+				<uni-row :gutter="20">
+					<uni-col :span="8">
+						<view class="m-tag-two three-color">
+							<!-- wxcomponents测试小程序可用,H5没有效果 -->
+							<!-- 只要组件安装在项目根目录或uni_modules的components目录下，
+							并符合components/组件名称/组件名称.vue或uni_modules/插件ID/
+							components/组件名称/组件名称.vue目录结构。
+							就可以不用引用、注册，直接在页面中使用 -->
+							<m-tag tag-title="发现" tag-descript="发现有趣的文章"></m-tag>
+						</view>
+					</uni-col>
+					<uni-col :span="8">
+						<view class="m-tag-two three-color">
+							<m-tag tag-title="任务" tag-descript="给自己定的小目标"></m-tag>
+						</view>
+					</uni-col>
+					<uni-col :span="8">
+						<view class="m-tag-two three-color">
+							<m-tag tag-title="省钱" tag-descript="东南西北风"></m-tag>
+						</view>
+					</uni-col>
+				</uni-row>
+			</view>
 		</view>
 	</view>
 </template>
@@ -91,6 +130,28 @@
 			border-top-left-radius: 80rpx;
 			border-top-right-radius: 80rpx;
 			background-color: white;
+
+			.m-uni-row {
+				padding: 0 26rpx;
+
+				.m-tag-two {
+					box-sizing: border-box;
+					padding: 12rpx;
+					height: 100rpx;
+				}
+
+				.one-color {
+					background-color: #ebeefe;
+				}
+
+				.two-color {
+					background-color: #fcebec;
+				}
+
+				.three-color {
+					background-color: #fbf8ee;
+				}
+			}
 		}
 
 		.bg-color {
@@ -124,15 +185,6 @@
 		}
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
 	.swiper-box {
 		height: 240rpx;
 		padding: 26rpx;
@@ -149,18 +201,6 @@
 		.swiper-banner {
 			width: 100%;
 		}
-	}
-
-	.swiper-item0 {
-		background-color: #cee1fd;
-	}
-
-	.swiper-item1 {
-		background-color: #b2cef7;
-	}
-
-	.swiper-item2 {
-		background-color: #cee1fd;
 	}
 
 	.image {

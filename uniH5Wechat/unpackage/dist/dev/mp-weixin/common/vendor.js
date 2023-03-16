@@ -7026,3 +7026,4 @@ exports.reactive = reactive;
 exports.ref = ref;
 exports.resolveComponent = resolveComponent;
 exports.t = t;
+exports.unref = unref;

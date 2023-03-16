@@ -1,0 +1,1 @@
+<view><text class="tag-title">{{a}}</text><text class="tag-descript">{{b}}</text></view>
