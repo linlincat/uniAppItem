@@ -23,61 +23,68 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.m-content {
+.uni-swiper__warp {
   display: flex;
+  flex: 1;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
-.m-content .bg-color {
-  background-image: linear-gradient(to right, #f5bf4b, #f7d758);
-}
-.m-content .uni-searchbar {
-  width: 65%;
-}
-.m-content .status_bar {
-  height: var(--status-bar-height);
-  width: 100%;
-}
-.m-content .search-box {
-  width: 100%;
-  background-image: linear-gradient(to right, #f5bf4b, #f7d758);
-}
-.m-content .search-width {
-  width: 70%;
-}
-.m-content .uni-searchbar__box {
-  justify-content: start;
-}
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-.swiper-box {
-  height: 240rpx;
-  padding: 26rpx;
-}
-.swiper-item {
+.uni-swiper__dots-box {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 240rpx;
+}
+.uni-swiper__dots-item {
+  width: 8px;
+  border-radius: 100px;
+  margin-left: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.uni-swiper__dots-item:first-child {
+  margin: 0;
+}
+.uni-swiper__dots-default {
+  border-radius: 100px;
+}
+.uni-swiper__dots-long {
+  border-radius: 50px;
+}
+.uni-swiper__dots-bar {
+  border-radius: 50px;
+}
+.uni-swiper__dots-nav {
+  bottom: 0px;
+  padding: 8px 0;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.uni-swiper__dots-nav-item {
+  /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+  font-size: 14px;
   color: #fff;
+  margin: 0 15px;
 }
-.swiper-item0 {
-  background-color: #cee1fd;
+.uni-swiper__dots-indexes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.swiper-item1 {
-  background-color: #b2cef7;
-}
-.swiper-item2 {
-  background-color: #cee1fd;
-}
-.image {
-  width: 750rpx;
-  border-radius: 20rpx;
+.uni-swiper__dots-indexes-text {
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
 }
