@@ -24,11 +24,14 @@ const _sfc_main = {
       selectedBorder: "1px rgba(254, 252, 251, .9) solid"
     });
     const info = common_vendor.reactive([{
-      content: "内容 A"
+      content: "内容 A",
+      imgUrl: "../../static/swiper/m1.jpg"
     }, {
-      content: "内容 B"
+      content: "内容 B",
+      imgUrl: "../../static/swiper/m2.jpg"
     }, {
-      content: "内容 C"
+      content: "内容 C",
+      imgUrl: "../../static/swiper/m3.jpg"
     }]);
     const current = common_vendor.ref(0);
     const swiperDotIndex = common_vendor.ref(0);
@@ -56,9 +59,9 @@ const _sfc_main = {
           placeholder: "今天等文章有新款哈",
           ["cancel-text"]: "取消"
         }),
-        c: common_vendor.f(3, (item, index, i0) => {
+        c: common_vendor.f(info, (item, index, i0) => {
           return {
-            a: common_vendor.t(index + 1),
+            a: item.imgUrl,
             b: common_vendor.n("swiper-item" + index),
             c: index
           };

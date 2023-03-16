@@ -28,6 +28,13 @@
   flex-direction: column;
   position: relative;
 }
+.m-content .body-box {
+  margin-top: -70rpx;
+  padding-top: 40rpx;
+  border-top-left-radius: 80rpx;
+  border-top-right-radius: 80rpx;
+  background-color: white;
+}
 .m-content .bg-color {
   background-image: linear-gradient(to right, #f5bf4b, #f7d758);
 }
@@ -41,6 +48,7 @@
 .m-content .search-box {
   width: 100%;
   background-image: linear-gradient(to right, #f5bf4b, #f7d758);
+  padding-bottom: 80rpx;
 }
 .m-content .search-width {
   width: 70%;
@@ -67,6 +75,9 @@
   align-items: center;
   height: 240rpx;
   color: #fff;
+}
+.swiper-item .swiper-banner {
+  width: 100%;
 }
 .swiper-item0 {
   background-color: #cee1fd;
