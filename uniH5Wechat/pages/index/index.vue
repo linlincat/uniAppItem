@@ -1,23 +1,12 @@
 <template>
 	<view class="m-content">
-		<view class="status_bar"
-			style="background-image: linear-gradient(to right, rgb(245, 191, 75), rgb(247, 215, 88));"></view>
-
-		<!-- #ifdef MP-WEIXIN -->
-		<view style="background-image: linear-gradient(to right, rgb(245, 191, 75), rgb(247, 215, 88));">
-			<uni-search-bar placeholder="今天星期四" cancel-text="取消">
-				<uni-icons slot="searchIcon" color="#999999" size="18" type="home" />
-			</uni-search-bar>
-		</view>
-		<!-- #endif -->
-		<!-- #ifdef H5 -->
+		<view class="status_bar bg-color"></view>
 		<view class="search-box">
 			<!-- 首页顶部搜索 -->
 			<uni-search-bar placeholder="今天等文章有新款哈" cancel-text="取消">
 				<uni-icons slot="searchIcon" color="#999999" size="18" type="home" />
 			</uni-search-bar>
 		</view>
-		<!-- #endif -->
 	</view>
 </template>
 
@@ -50,10 +39,16 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
+
+		.bg-color {
+			background-image: linear-gradient(to right, rgb(245, 191, 75), rgb(247, 215, 88));
+		}
+
 		/*  #ifdef  MP-WEIXIN  */
 		:deep(.uni-searchbar) {
 			width: 65%;
 		}
+
 		/*  #endif  */
 
 		.status_bar {

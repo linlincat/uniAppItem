@@ -28,6 +28,9 @@
   flex-direction: column;
   position: relative;
 }
+.m-content .bg-color {
+  background-image: linear-gradient(to right, #f5bf4b, #f7d758);
+}
 .m-content .uni-searchbar {
   width: 65%;
 }
