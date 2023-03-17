@@ -14,7 +14,22 @@
 				//小程序去掉头部 "navigationStyle": "custom"
 				"navigationStyle": "custom"
 			}
-		}
+		},{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "show"
+			}
+        },{
+            "path" : "pages/me/me",
+            "style" : {
+				"navigationBarTitleText": "show"
+			}
+        },{
+            "path" : "pages/tools/tools",
+            "style" : {
+				"navigationBarTitleText": "show"
+			}
+        }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -22,5 +37,28 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#999999",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"iconWidth": "24rpx",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/tools/tools",
+				"text": "工具"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的"
+			}
+		]
+	}
 }
