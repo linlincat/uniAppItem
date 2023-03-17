@@ -62,7 +62,7 @@
 			<m-title m-title="热门推荐"></m-title>
 			<!-- 横向滚动 -->
 			<view>
-				<scroll-view class="scroll-view_H" scroll-x="true">
+				<scroll-view show-scrollbar="true" class="scroll-view_H" scroll-x="true">
 					<view class="scroll-view-item_H">
 						<image src="../../static/swiper/m1.jpg" mode="aspectFill"></image>
 					</view>
@@ -156,6 +156,10 @@
 </script>
 
 <style lang="scss">
+	// ::-webkit-scrollbar {
+	//     width: 0;
+	//     height: 0;
+	//     color: transparent;   }
 	page {
 		// 16位的颜色不出来
 	}
