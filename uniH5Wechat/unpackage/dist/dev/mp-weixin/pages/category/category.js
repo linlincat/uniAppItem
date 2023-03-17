@@ -4,17 +4,56 @@ if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
   const _easycom_uni_search_bar2 = common_vendor.resolveComponent("uni-search-bar");
   const _easycom_uni_notice_bar2 = common_vendor.resolveComponent("uni-notice-bar");
-  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_notice_bar2)();
+  const _easycom_m_img_ad2 = common_vendor.resolveComponent("m-img-ad");
+  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_notice_bar2 + _easycom_m_img_ad2)();
 }
 const _easycom_uni_icons = () => "../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
 const _easycom_uni_search_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.js";
 const _easycom_uni_notice_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-notice-bar/uni-notice-bar.js";
+const _easycom_m_img_ad = () => "../../components/m-img-ad/m-img-ad.js";
 if (!Math) {
-  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_notice_bar)();
+  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_notice_bar + _easycom_m_img_ad)();
 }
 const _sfc_main = {
   __name: "category",
   setup(__props) {
+    const adItems = common_vendor.reactive([{
+      imgUrl: "../../static/swiper/m2.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m3.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m3.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m1.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m2.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m3.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m2.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m2.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m3.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m1.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m1.jpg",
+      text: "猫咪壁纸"
+    }, {
+      imgUrl: "../../static/swiper/m2.jpg",
+      text: "猫咪壁纸"
+    }]);
     common_vendor.onLoad(() => {
       console.log("load");
     });
@@ -36,6 +75,9 @@ const _sfc_main = {
           ["show-icon"]: true,
           scrollable: true,
           text: "有那么一只猫咪,有一点点的叛逆,还有一点点的嚣张,没事吃吃鱼,没事睡睡觉吃吃鱼...."
+        }),
+        d: common_vendor.p({
+          ["ad-items"]: adItems
         })
       };
     };

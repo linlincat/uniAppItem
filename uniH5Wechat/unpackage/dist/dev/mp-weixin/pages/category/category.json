@@ -4,6 +4,7 @@
   "usingComponents": {
     "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
     "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar",
-    "uni-notice-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-notice-bar/uni-notice-bar"
+    "uni-notice-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-notice-bar/uni-notice-bar",
+    "m-img-ad": "../../components/m-img-ad/m-img-ad"
   }
 }

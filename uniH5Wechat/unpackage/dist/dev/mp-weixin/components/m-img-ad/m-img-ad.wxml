@@ -1,0 +1,1 @@
+<view class="m-img-ad data-v-552e07a4"><view wx:for="{{a}}" wx:for-item="item" wx:key="c" class="ad-box data-v-552e07a4"><image class="image data-v-552e07a4" src="{{item.a}}" mode="aspectFill"></image><text class="data-v-552e07a4">{{item.b}}</text></view></view>

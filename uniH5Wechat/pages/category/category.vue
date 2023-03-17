@@ -22,13 +22,13 @@
 				<view class="tag-box bg-color03">小小喵</view>
 			</view>
 			<view style="margin-top: 26rpx;">
-				<uni-notice-bar show-icon scrollable
-					text="有那么一只猫咪,有一点点的叛逆,还有一点点的嚣张,没事吃吃鱼,没事睡睡觉吃吃鱼...." />
+				<uni-notice-bar show-icon scrollable text="有那么一只猫咪,有一点点的叛逆,还有一点点的嚣张,没事吃吃鱼,没事睡睡觉吃吃鱼...." />
 			</view>
 			<view class="m-title-box" style="margin: 30rpx 0;">
 				<text>按需分类</text>
-				<!-- 组件 -->
 			</view>
+			<!-- 组件 -->
+			<m-img-ad :ad-items="adItems"></m-img-ad>
 		</view>
 	</view>
 </template>
@@ -44,7 +44,45 @@
 		reactive,
 		ref
 	} from "vue";
-	
+
+	const adItems = reactive([{
+		imgUrl: '../../static/swiper/m2.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m3.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m3.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m1.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m2.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m3.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m2.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m2.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m3.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m1.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m1.jpg',
+		text: "猫咪壁纸"
+	}, {
+		imgUrl: '../../static/swiper/m2.jpg',
+		text: "猫咪壁纸"
+	}])
+
 	onLoad(() => {
 		console.log("load")
 	})
