@@ -23,12 +23,14 @@
         },{
             "path" : "pages/me/me",
             "style" : {
-				"navigationBarTitleText": "show"
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
 			}
         },{
             "path" : "pages/tools/tools",
             "style" : {
-				"navigationBarTitleText": "show"
+				"navigationBarTitleText": "工具",
+				"navigationStyle": "custom"
 			}
         }
 	],

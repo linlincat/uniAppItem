@@ -1,13 +1,5 @@
 {
-  "navigationBarTitleText": "show",
-  "usingComponents": {
-    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
-    "uni-search-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar",
-    "uni-swiper-dot": "../../node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot",
-    "m-tag": "../../components/m-tag/m-tag",
-    "uni-col": "../../node-modules/@dcloudio/uni-ui/lib/uni-col/uni-col",
-    "uni-row": "../../node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row",
-    "m-title": "../../components/m-title/m-title",
-    "m-water": "../../components/m-water/m-water"
-  }
+  "navigationBarTitleText": "我的",
+  "navigationStyle": "custom",
+  "usingComponents": {}
 }
