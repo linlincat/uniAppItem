@@ -7,6 +7,7 @@
     "uni-swiper-dot": "../../node-modules/@dcloudio/uni-ui/lib/uni-swiper-dot/uni-swiper-dot",
     "m-tag": "../../components/m-tag/m-tag",
     "uni-col": "../../node-modules/@dcloudio/uni-ui/lib/uni-col/uni-col",
-    "uni-row": "../../node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row"
+    "uni-row": "../../node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row",
+    "m-title": "../../components/m-title/m-title"
   }
 }

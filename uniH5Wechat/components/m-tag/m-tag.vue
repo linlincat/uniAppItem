@@ -16,7 +16,7 @@
 
 <style lang="scss">
 	.tag-title {
-		font-size: 28rpx;
+		font-size: $uni-font-size-base;
 		color: #333;
 		font-weight: bold;
 	}
@@ -24,6 +24,6 @@
 	.tag-descript {
 		display: block;
 		color: #999;
-		font-size: 24rpx;
+		font-size: $uni-font-size-sm;
 	}
 </style>

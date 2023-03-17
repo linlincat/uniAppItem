@@ -1,0 +1,1 @@
+<view class="m-title-box"><text class="m-title">{{a}}</text><text class="m-more">{{b}} ></text></view>

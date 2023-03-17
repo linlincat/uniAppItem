@@ -58,6 +58,7 @@
 					</uni-col>
 				</uni-row>
 			</view>
+			<m-title m-title="热门推荐"></m-title>
 		</view>
 	</view>
 </template>

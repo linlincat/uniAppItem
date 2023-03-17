@@ -7,7 +7,8 @@ if (!Array) {
   const _easycom_m_tag2 = common_vendor.resolveComponent("m-tag");
   const _easycom_uni_col2 = common_vendor.resolveComponent("uni-col");
   const _easycom_uni_row2 = common_vendor.resolveComponent("uni-row");
-  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_swiper_dot2 + _easycom_m_tag2 + _easycom_uni_col2 + _easycom_uni_row2)();
+  const _easycom_m_title2 = common_vendor.resolveComponent("m-title");
+  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_swiper_dot2 + _easycom_m_tag2 + _easycom_uni_col2 + _easycom_uni_row2 + _easycom_m_title2)();
 }
 const _easycom_uni_icons = () => "../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
 const _easycom_uni_search_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.js";
@@ -15,8 +16,9 @@ const _easycom_uni_swiper_dot = () => "../../node-modules/@dcloudio/uni-ui/lib/u
 const _easycom_m_tag = () => "../../components/m-tag/m-tag.js";
 const _easycom_uni_col = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-col/uni-col.js";
 const _easycom_uni_row = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row.js";
+const _easycom_m_title = () => "../../components/m-title/m-title.js";
 if (!Math) {
-  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_swiper_dot + _easycom_m_tag + _easycom_uni_col + _easycom_uni_row)();
+  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_swiper_dot + _easycom_m_tag + _easycom_uni_col + _easycom_uni_row + _easycom_m_title)();
 }
 const _sfc_main = {
   __name: "index",
@@ -122,6 +124,9 @@ const _sfc_main = {
         }),
         s: common_vendor.p({
           gutter: 20
+        }),
+        t: common_vendor.p({
+          ["m-title"]: "热门推荐"
         })
       };
     };

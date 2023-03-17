@@ -23,13 +23,18 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.tag-title {
-  font-size: 14px;
-  color: #333;
-  font-weight: bold;
+.m-title-box {
+  margin-top: 20rpx;
+  padding: 30rpx 26rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.tag-descript {
-  display: block;
-  color: #999;
+.m-title-box .m-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+.m-title-box .m-more {
   font-size: 12px;
+  color: #999;
 }
