@@ -92,3 +92,21 @@
   width: 750rpx;
   border-radius: 20rpx;
 }
+.scroll-view_H {
+  margin-left: 16rpx;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.scroll-view-item_H {
+  margin: 0 10rpx;
+  display: inline-block;
+  width: 200rpx;
+  height: 280rpx;
+}
+.scroll-view-item_H image {
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
+}

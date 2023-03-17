@@ -127,6 +127,9 @@ const _sfc_main = {
         }),
         t: common_vendor.p({
           ["m-title"]: "热门推荐"
+        }),
+        v: common_vendor.p({
+          ["m-title"]: "最新推荐"
         })
       };
     };

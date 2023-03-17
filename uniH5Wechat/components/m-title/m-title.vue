@@ -16,7 +16,6 @@
 
 <style lang="scss">
 .m-title-box {
-	margin-top: 20rpx;
 	padding: 30rpx 26rpx;
 	display: flex;
 	flex-direction: row;

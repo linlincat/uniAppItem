@@ -58,7 +58,30 @@
 					</uni-col>
 				</uni-row>
 			</view>
+			<!-- 标题 -->
 			<m-title m-title="热门推荐"></m-title>
+			<!-- 横向滚动 -->
+			<view>
+				<scroll-view class="scroll-view_H" scroll-x="true">
+					<view class="scroll-view-item_H">
+						<image src="../../static/swiper/m1.jpg" mode="aspectFill"></image>
+					</view>
+					<view class="scroll-view-item_H">
+						<image src="../../static/swiper/m2.jpg" mode="aspectFill"></image>
+					</view>
+					<view class="scroll-view-item_H">
+						<image src="../../static/swiper/m3.jpg" mode="aspectFill"></image>
+					</view>
+					<view class="scroll-view-item_H">
+						<image src="../../static/swiper/m1.jpg" mode="aspectFill"></image>
+					</view>
+					<view class="scroll-view-item_H" style="margin-right: 20px;">
+						<image src="../../static/swiper/m2.jpg" mode="aspectFill"></image>
+					</view>
+				</scroll-view>
+			</view>
+			<!-- 标题 -->
+			<m-title m-title="最新推荐"></m-title>
 		</view>
 	</view>
 </template>
@@ -207,5 +230,27 @@
 	.image {
 		width: 750rpx;
 		border-radius: 20rpx;
+	}
+
+
+	.scroll-view_H {
+		margin-left: 16rpx;
+		white-space: nowrap;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.scroll-view-item_H {
+		margin: 0 10rpx;
+		display: inline-block;
+		width: 200rpx;
+		height: 280rpx;
+		
+		image {
+			border-radius: 20rpx;
+			width: 100%;
+			height: 100%;
+		}
 	}
 </style>

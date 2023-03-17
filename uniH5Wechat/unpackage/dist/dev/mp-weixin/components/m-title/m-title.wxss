@@ -24,7 +24,6 @@
 /* 透明度 */
 /* 文章场景相关 */
 .m-title-box {
-  margin-top: 20rpx;
   padding: 30rpx 26rpx;
   display: flex;
   flex-direction: row;
