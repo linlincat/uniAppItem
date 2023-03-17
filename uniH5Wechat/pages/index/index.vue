@@ -90,6 +90,15 @@
 				<view class="m-tag-default">简约</view>
 				<view class="m-tag-default">毛多</view>
 			</view>
+			<!-- 瀑布流 uniLoadMore组件的使用注意事项这个uniLoadMore组件需要跟数据展示的元素同级别
+			如果是在数据元素外面嵌套一个元素，然后再跟uniLoadMore同级别，则不会检测到数据上拉加载的状态。
+			向上面的这种，item元素是数据元素，如果将uniLoadMore组件放在跟root元素同级别，则不会实时检
+			测到下拉加载数据。因此我用了一个很笨的方法来实现；就是在uniLoadMore组件上面同级别的添加一个
+			数据元素，然后将这个数据元素隐藏，以此来触发数据下拉加载。
+<view class="zhaiweiloadmore" v-if="goodsList.length > 0"></view>
+<uni-load-more :status="loadingType" v-if="goodsList.length"></uni-load-more>-->
+			<view style="height: 26rpx;"></view>
+			<m-water></m-water>
 		</view>
 	</view>
 </template>
@@ -269,12 +278,14 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		font-size: $uni-font-size-sm;
+
 		.m-tag-default {
 			background-color: #f5f6fa;
 			color: #999;
 			border-radius: 28rpx;
 			padding: 10rpx 30rpx !important;
 		}
+
 		.m-tag-style {
 			background-color: #f3d45c;
 			color: #333;
