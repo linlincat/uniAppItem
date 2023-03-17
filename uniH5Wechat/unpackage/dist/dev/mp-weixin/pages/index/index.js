@@ -64,6 +64,7 @@ const _sfc_main = {
           type: "home"
         }),
         b: common_vendor.p({
+          radius: "50",
           placeholder: "今天等文章有新款哈",
           ["cancel-text"]: "取消"
         }),

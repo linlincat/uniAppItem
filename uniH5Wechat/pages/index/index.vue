@@ -3,7 +3,7 @@
 		<view class="status_bar bg-color"></view>
 		<view class="search-box">
 			<!-- 首页顶部搜索 -->
-			<uni-search-bar placeholder="今天等文章有新款哈" cancel-text="取消">
+			<uni-search-bar radius="50" placeholder="今天等文章有新款哈" cancel-text="取消">
 				<uni-icons slot="searchIcon" color="#999999" size="18" type="home" />
 			</uni-search-bar>
 		</view>
@@ -23,12 +23,12 @@
 			<view class="m-uni-row">
 				<uni-row :gutter="20">
 					<uni-col :span="12">
-						<view class="m-tag-two one-color">
+						<view class="m-tag-wrap one-color">
 							<m-tag tag-title="精美猫咪" tag-descript="长毛猫、短毛猫、无毛猫"></m-tag>
 						</view>
 					</uni-col>
 					<uni-col :span="12">
-						<view class="m-tag-two two-color">
+						<view class="m-tag-wrap two-color">
 							<m-tag tag-title="猫咪套图" tag-descript="热门+精选+新图"></m-tag>
 						</view>
 					</uni-col>
@@ -37,7 +37,7 @@
 			<view class="m-uni-row" style="margin-top: 20rpx;">
 				<uni-row :gutter="20">
 					<uni-col :span="8">
-						<view class="m-tag-two three-color">
+						<view class="m-tag-wrap three-color">
 							<!-- wxcomponents测试小程序可用,H5没有效果 -->
 							<!-- 只要组件安装在项目根目录或uni_modules的components目录下，
 							并符合components/组件名称/组件名称.vue或uni_modules/插件ID/
@@ -47,12 +47,12 @@
 						</view>
 					</uni-col>
 					<uni-col :span="8">
-						<view class="m-tag-two three-color">
+						<view class="m-tag-wrap three-color">
 							<m-tag tag-title="任务" tag-descript="给自己定的小目标"></m-tag>
 						</view>
 					</uni-col>
 					<uni-col :span="8">
-						<view class="m-tag-two three-color">
+						<view class="m-tag-wrap three-color">
 							<m-tag tag-title="省钱" tag-descript="东南西北风"></m-tag>
 						</view>
 					</uni-col>
@@ -82,6 +82,14 @@
 			</view>
 			<!-- 标题 -->
 			<m-title m-title="最新推荐"></m-title>
+			<view class="m-tag-box">
+				<!-- uni-tag 在微信小程序中样式兼容差,自己实现标签 -->
+				<view class="m-tag-style m-tag-default">最新</view>
+				<view class="m-tag-default">精选</view>
+				<view class="m-tag-default">高清</view>
+				<view class="m-tag-default">简约</view>
+				<view class="m-tag-default">毛多</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -151,17 +159,18 @@
 		.body-box {
 			margin-top: -70rpx;
 			padding-top: 40rpx;
-			border-top-left-radius: 80rpx;
-			border-top-right-radius: 80rpx;
+			border-top-left-radius: 60rpx;
+			border-top-right-radius: 60rpx;
 			background-color: white;
 
 			.m-uni-row {
 				padding: 0 26rpx;
 
-				.m-tag-two {
+				.m-tag-wrap {
+					border-radius: 10rpx;
 					box-sizing: border-box;
 					padding: 12rpx;
-					height: 100rpx;
+					height: 114rpx;
 				}
 
 				.one-color {
@@ -223,6 +232,7 @@
 		color: #fff;
 
 		.swiper-banner {
+			border-radius: 14rpx;
 			width: 100%;
 		}
 	}
@@ -246,11 +256,31 @@
 		display: inline-block;
 		width: 200rpx;
 		height: 280rpx;
-		
+
 		image {
 			border-radius: 20rpx;
 			width: 100%;
 			height: 100%;
 		}
+	}
+
+	.m-tag-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		font-size: $uni-font-size-sm;
+		.m-tag-default {
+			background-color: #f5f6fa;
+			color: #999;
+			border-radius: 28rpx;
+			padding: 10rpx 30rpx !important;
+		}
+		.m-tag-style {
+			background-color: #f3d45c;
+			color: #333;
+			border-radius: 28rpx;
+			padding: 10rpx 30rpx !important;
+		}
+
 	}
 </style>

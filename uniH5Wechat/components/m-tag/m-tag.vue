@@ -18,7 +18,9 @@
 	.tag-title {
 		font-size: $uni-font-size-base;
 		color: #333;
+		display: inline-block;
 		font-weight: bold;
+		margin-bottom: 4rpx;
 	}
 
 	.tag-descript {

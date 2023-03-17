@@ -21,8 +21,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	.m-title {
-		font-weight: bold;
-		font-size: $uni-font-size-base;
+		color: #666;
+		font-size: $uni-font-size-lg;
 	}
 	.m-more {
 		font-size: $uni-font-size-sm;
