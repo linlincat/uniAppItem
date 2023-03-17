@@ -155,7 +155,7 @@
 	})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	// ::-webkit-scrollbar {
 	//     width: 0;
 	//     height: 0;
