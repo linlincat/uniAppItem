@@ -64,16 +64,20 @@
 			<view>
 				<scroll-view show-scrollbar="true" class="scroll-view_H" scroll-x="true">
 					<view class="scroll-view-item_H">
-						<image src="../../static/swiper/m1.jpg" mode="aspectFill"></image>
+						<image src="https://img.yostatic.com/ffuo918/202010/210b49bb67fe4cd6a15f5b51ae03899f.jpg"
+							mode="aspectFill"></image>
 					</view>
 					<view class="scroll-view-item_H">
-						<image src="../../static/swiper/m2.jpg" mode="aspectFill"></image>
+						<image
+							src="https://ts1.cn.mm.bing.net/th/id/R-C.b4247086c1e7da3f4ff74bebc45c54a9?rik=Bb7RtXkSqI31NQ&riu=http%3a%2f%2fossweb-img.qq.com%2fupload%2fwebplat%2finfo%2fsg%2f20160428%2f1461826665469654.jpg&ehk=j4Vdzit22K8pwp6WeDjEHzIU4CKPQD%2bt5ZloUn8hk5Q%3d&risl=&pid=ImgRaw&r=0"
+							mode="aspectFill"></image>
 					</view>
 					<view class="scroll-view-item_H">
-						<image src="../../static/swiper/m3.jpg" mode="aspectFill"></image>
+						<image src="https://img.zcool.cn/community/019b015cef9585a80121a470817c7f.jpg@2o.jpg"
+							mode="aspectFill"></image>
 					</view>
 					<view class="scroll-view-item_H">
-						<image src="../../static/swiper/m1.jpg" mode="aspectFill"></image>
+						<image src="https://image.9game.cn/2020/9/19/177125243.jpg" mode="aspectFill"></image>
 					</view>
 					<view class="scroll-view-item_H" style="margin-right: 20px;">
 						<image src="../../static/swiper/m2.jpg" mode="aspectFill"></image>
@@ -123,14 +127,11 @@
 		selectedBorder: '1px rgba(254, 252, 251, .9) solid'
 	});
 	const info = reactive([{
-		content: '内容 A',
-		imgUrl: "../../static/swiper/m1.jpg"
+		imgUrl: "https://tse1-mm.cn.bing.net/th/id/OIP-C.RNGpB8bicqfbxyQgBqmffQHaEK?pid=ImgDet&rs=1"
 	}, {
-		content: '内容 B',
-		imgUrl: "../../static/swiper/m2.jpg"
+		imgUrl: "https://ts1.cn.mm.bing.net/th/id/R-C.5bce6c01f2413be6d73f716d842b1e0a?rik=mJOZ6Ca4qQo%2bIg&riu=http%3a%2f%2fimages.969g.com%2f202103151552248257.jpg&ehk=CnaL8UJTYvMr9UxrtDnn%2fPgnoli6rdDbMLZuBFCrj%2bA%3d&risl=&pid=ImgRaw&r=0"
 	}, {
-		content: '内容 C',
-		imgUrl: "../../static/swiper/m3.jpg"
+		imgUrl: "https://tse4-mm.cn.bing.net/th/id/OIP-C.otskqYac6Har5XPjFnRcXAHaEK?pid=ImgDet&rs=1"
 	}], );
 	const current = ref(0);
 	const swiperDotIndex = ref(0);

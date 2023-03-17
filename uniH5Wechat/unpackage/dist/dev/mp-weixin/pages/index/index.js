@@ -34,14 +34,11 @@ const _sfc_main = {
       selectedBorder: "1px rgba(254, 252, 251, .9) solid"
     });
     const info = common_vendor.reactive([{
-      content: "内容 A",
-      imgUrl: "../../static/swiper/m1.jpg"
+      imgUrl: "https://tse1-mm.cn.bing.net/th/id/OIP-C.RNGpB8bicqfbxyQgBqmffQHaEK?pid=ImgDet&rs=1"
     }, {
-      content: "内容 B",
-      imgUrl: "../../static/swiper/m2.jpg"
+      imgUrl: "https://ts1.cn.mm.bing.net/th/id/R-C.5bce6c01f2413be6d73f716d842b1e0a?rik=mJOZ6Ca4qQo%2bIg&riu=http%3a%2f%2fimages.969g.com%2f202103151552248257.jpg&ehk=CnaL8UJTYvMr9UxrtDnn%2fPgnoli6rdDbMLZuBFCrj%2bA%3d&risl=&pid=ImgRaw&r=0"
     }, {
-      content: "内容 C",
-      imgUrl: "../../static/swiper/m3.jpg"
+      imgUrl: "https://tse4-mm.cn.bing.net/th/id/OIP-C.otskqYac6Har5XPjFnRcXAHaEK?pid=ImgDet&rs=1"
     }]);
     const current = common_vendor.ref(0);
     const swiperDotIndex = common_vendor.ref(0);

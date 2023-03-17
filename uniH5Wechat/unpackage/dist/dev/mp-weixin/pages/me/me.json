@@ -1,5 +1,12 @@
 {
   "navigationBarTitleText": "我的",
   "navigationStyle": "custom",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-grid-item": "../../node-modules/@dcloudio/uni-ui/lib/uni-grid-item/uni-grid-item",
+    "uni-grid": "../../node-modules/@dcloudio/uni-ui/lib/uni-grid/uni-grid",
+    "uni-card": "../../node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card",
+    "uni-list-item": "../../node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item",
+    "uni-list": "../../node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list"
+  }
 }

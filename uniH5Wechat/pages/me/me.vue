@@ -11,7 +11,28 @@
 			</view>
 		</view>
 		<view class="body-box">
-			sss
+			<!--  我的想法  -->
+			<uni-card title="我的想法">
+				<uni-grid :column="4" :highlight="true" :showBorder="false">
+					<uni-grid-item v-for="(item, index) in tagList" :index="index" :key="index">
+						<view class="grid-item-box" style="background-color: #fff;">
+							<uni-icons :type="item.icon" :size="30" color="#f8e251" />
+							<text class="text">{{item.text}}</text>
+						</view>
+					</uni-grid-item>
+				</uni-grid>
+			</uni-card>
+
+			<!-- 其它 -->
+			<uni-card title="其它">
+				<!-- border-full 没有效果 -->
+				<uni-list border-full>
+					<uni-list-item :show-extra-icon="true" showArrow :extra-icon="extraIcon" title="联系喵喵" />
+					<uni-list-item :show-extra-icon="true" showArrow :extra-icon="extraIcon1" title="提供建议" />
+					<uni-list-item :show-extra-icon="true" showArrow :extra-icon="extraIcon2" title="我的作品" />
+					<uni-list-item :show-extra-icon="true" showArrow :extra-icon="extraIcon3" title="关于喵咪" />
+				</uni-list>
+			</uni-card>
 		</view>
 	</view>
 </template>
@@ -27,7 +48,39 @@
 		reactive,
 		ref
 	} from "vue";
-
+	const extraIcon = reactive({
+		color: '#f8e24e',
+		size: '22',
+		type: 'phone'
+	})
+	const extraIcon1 = reactive({
+		color: '#f8e24e',
+		size: '22',
+		type: 'compose'
+	})
+	const extraIcon2 = reactive({
+		color: '#f8e24e',
+		size: '22',
+		type: 'images'
+	})
+	const extraIcon3 = reactive({
+		color: '#f8e24e',
+		size: '22',
+		type: 'shop'
+	})
+	const tagList = reactive([{
+		text: "我的猫咪",
+		icon: 'color'
+	}, {
+		text: "我的收藏",
+		icon: 'heart'
+	}, {
+		text: "我的文章",
+		icon: 'map'
+	}, {
+		text: "我的作品",
+		icon: 'images'
+	}])
 
 	onLoad(() => {
 		console.log("load")
@@ -45,6 +98,26 @@
 		width: 100%;
 	}
 
+	:deep(.uni-list--border-bottom),
+	:deep(.uni-list--border-top) {
+		background-color: transparent;
+	}
+
+	.grid-item-box {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 15rpx 0;
+	}
+
+	.text {
+		color: #999;
+		font-size: 14px;
+		margin-top: 5px;
+	}
+
 	.m-content {
 		display: flex;
 		flex-direction: column;
@@ -54,18 +127,21 @@
 			display: flex;
 			height: 240rpx;
 			background-color: #fadf4b;
+
 			.header-wrap {
 				margin-top: 40rpx;
 				margin-left: 40rpx;
 			}
-			
+
 			.header-text-box {
 				padding-top: 50rpx;
 				padding-left: 26rpx;
+
 				.user {
 					font-size: $uni-font-size-lg;
 					color: white;
 				}
+
 				.user-descript {
 					display: block;
 					font-size: $uni-font-size-sm;
