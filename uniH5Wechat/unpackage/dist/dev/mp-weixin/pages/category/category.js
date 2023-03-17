@@ -3,37 +3,18 @@ const common_vendor = require("../../common/vendor.js");
 if (!Array) {
   const _easycom_uni_icons2 = common_vendor.resolveComponent("uni-icons");
   const _easycom_uni_search_bar2 = common_vendor.resolveComponent("uni-search-bar");
-  (_easycom_uni_icons2 + _easycom_uni_search_bar2)();
+  const _easycom_uni_notice_bar2 = common_vendor.resolveComponent("uni-notice-bar");
+  (_easycom_uni_icons2 + _easycom_uni_search_bar2 + _easycom_uni_notice_bar2)();
 }
 const _easycom_uni_icons = () => "../../uni_modules/uni-icons/components/uni-icons/uni-icons.js";
 const _easycom_uni_search_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.js";
+const _easycom_uni_notice_bar = () => "../../node-modules/@dcloudio/uni-ui/lib/uni-notice-bar/uni-notice-bar.js";
 if (!Math) {
-  (_easycom_uni_icons + _easycom_uni_search_bar)();
+  (_easycom_uni_icons + _easycom_uni_search_bar + _easycom_uni_notice_bar)();
 }
 const _sfc_main = {
   __name: "category",
   setup(__props) {
-    common_vendor.reactive({
-      bottom: 26,
-      backgroundColor: "rgba(218, 207, 194, .3)",
-      border: "1px rgba(218, 207, 194, .3) solid",
-      color: "#fff",
-      selectedBackgroundColor: "rgba(254, 252, 251, .9)",
-      selectedBorder: "1px rgba(254, 252, 251, .9) solid"
-    });
-    common_vendor.reactive([{
-      content: "内容 A",
-      imgUrl: "../../static/swiper/m1.jpg"
-    }, {
-      content: "内容 B",
-      imgUrl: "../../static/swiper/m2.jpg"
-    }, {
-      content: "内容 C",
-      imgUrl: "../../static/swiper/m3.jpg"
-    }]);
-    common_vendor.ref(0);
-    common_vendor.ref(0);
-    common_vendor.ref("round");
     common_vendor.onLoad(() => {
       console.log("load");
     });
@@ -50,6 +31,11 @@ const _sfc_main = {
           radius: "50",
           placeholder: "今天等文章有新款哈",
           ["cancel-text"]: "取消"
+        }),
+        c: common_vendor.p({
+          ["show-icon"]: true,
+          scrollable: true,
+          text: "有那么一只猫咪,有一点点的叛逆,还有一点点的嚣张,没事吃吃鱼,没事睡睡觉吃吃鱼...."
         })
       };
     };

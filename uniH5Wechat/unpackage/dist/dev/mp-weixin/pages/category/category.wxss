@@ -53,12 +53,13 @@
   margin-top: -70rpx;
   padding-top: 40rpx;
   padding-left: 26rpx;
-  pading-right: 26rpx;
+  padding-right: 26rpx;
   border-top-left-radius: 60rpx;
   border-top-right-radius: 60rpx;
   background-color: white;
 }
 .m-content .body-box .m-title-box.data-v-8145b772 {
+  color: #666;
   font-size: 16;
   margin-bottom: 30rpx;
 }
