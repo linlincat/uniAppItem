@@ -109,9 +109,15 @@
 		align-itema: flex-start; 
 
 		.good {
+			border-radius: 16rpx;
 			margin-bottom: 16rpx;
 			width: 100%;
 			background-color: #faf7eb;
+			
+			image {
+				border-top-left-radius: 16rpx;
+				border-top-right-radius: 16rpx;
+			}
 			
 			.item-title {
 				margin-left: 10rpx;;

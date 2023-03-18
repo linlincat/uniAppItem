@@ -92,6 +92,12 @@
 	})
 </script>
 
+<style>
+	page {
+		min-height: 100%;
+		background-color: #f5f5f5 !important;
+	}
+</style>
 <style lang="scss" scoped>
 	.status_bar {
 		height: var(--status-bar-height);
@@ -101,6 +107,10 @@
 	:deep(.uni-list--border-bottom),
 	:deep(.uni-list--border-top) {
 		background-color: transparent;
+	}
+
+	:deep(.uni-card--shadow) {
+		box-shadow: none !important;
 	}
 
 	.grid-item-box {
@@ -163,7 +173,7 @@
 			padding-top: 40rpx;
 			border-top-left-radius: 60rpx;
 			border-top-right-radius: 60rpx;
-			background-color: white;
+			background-color: #f5f5f5;
 		}
 
 		.bg-color {

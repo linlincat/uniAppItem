@@ -36,9 +36,14 @@
   align-itema: flex-start;
 }
 .item .good {
+  border-radius: 16rpx;
   margin-bottom: 16rpx;
   width: 100%;
   background-color: #faf7eb;
+}
+.item .good image {
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
 }
 .item .good .item-title {
   margin-left: 10rpx;

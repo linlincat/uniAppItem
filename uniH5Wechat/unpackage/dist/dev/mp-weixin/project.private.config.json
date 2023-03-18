@@ -3,18 +3,5 @@
   "projectname": "uniH5Wechat",
   "setting": {
     "compileHotReLoad": true
-  },
-  "condition": {
-    "miniprogram": {
-      "list": [
-        {
-          "name": "me",
-          "pathName": "pages/me/me",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        }
-      ]
-    }
   }
 }
