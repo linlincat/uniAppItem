@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "喵述",
+  "navigationBarBackgroundColor": "#f9da42",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-card": "../../node-modules/@dcloudio/uni-ui/lib/uni-card/uni-card",
+    "uni-title": "../../node-modules/@dcloudio/uni-ui/lib/uni-title/uni-title"
+  }
+}

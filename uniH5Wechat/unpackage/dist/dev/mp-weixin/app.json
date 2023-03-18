@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/category",
     "pages/me/me",
-    "pages/tools/tools"
+    "pages/tools/tools",
+    "pages/mdetail/mdetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",

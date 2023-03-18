@@ -14,25 +14,32 @@
 				//小程序去掉头部 "navigationStyle": "custom"
 				"navigationStyle": "custom"
 			}
-		},{
-            "path" : "pages/category/category",
-            "style" : {
+		}, {
+			"path": "pages/category/category",
+			"style": {
 				"navigationBarTitleText": "分类",
 				"navigationStyle": "custom"
 			}
-        },{
-            "path" : "pages/me/me",
-            "style" : {
+		}, {
+			"path": "pages/me/me",
+			"style": {
 				"navigationBarTitleText": "我的",
 				"navigationStyle": "custom"
 			}
-        },{
-            "path" : "pages/tools/tools",
-            "style" : {
+		}, {
+			"path": "pages/tools/tools",
+			"style": {
 				"navigationBarTitleText": "工具",
 				"navigationStyle": "custom"
 			}
-        }
+		}, {
+			"path": "pages/mdetail/mdetail",
+			"style": {
+				"navigationBarTitleText": "喵述",
+				"navigationBarBackgroundColor": "#f9da42",
+				"navigationBarTextStyle": "white"
+			}
+		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
