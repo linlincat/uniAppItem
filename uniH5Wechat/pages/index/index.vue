@@ -1,6 +1,7 @@
 <template>
 	<view class="m-content">
-		<view class="status_bar bg-color"></view>
+		<view class="bg-color" :style="{ height: iStatusBarHeight + 'px', width: '100%'}"></view>
+		<!-- <view class="status_bar bg-color"></view> -->
 		<view class="search-box">
 			<!-- 首页顶部搜索 -->
 			<uni-search-bar radius="50" placeholder="今天等文章有新款哈" cancel-text="取消">
@@ -126,13 +127,14 @@
 		selectedBackgroundColor: 'rgba(254, 252, 251, .9)',
 		selectedBorder: '1px rgba(254, 252, 251, .9) solid'
 	});
-	const info = reactive([ {
+	const info = reactive([{
 		imgUrl: "https://upload-bbs.mihoyo.com/upload/2021/05/20/191013579/e67248f95b5e1f187ad140e330c3ac11_2174860061824884372.jpg"
-	},{
+	}, {
 		imgUrl: "https://tse1-mm.cn.bing.net/th/id/OIP-C.RNGpB8bicqfbxyQgBqmffQHaEK?pid=ImgDet&rs=1"
 	}, {
 		imgUrl: "https://tse4-mm.cn.bing.net/th/id/OIP-C.otskqYac6Har5XPjFnRcXAHaEK?pid=ImgDet&rs=1"
-	}] );
+	}]);
+	const iStatusBarHeight = ref(0);
 	const current = ref(0);
 	const swiperDotIndex = ref(0);
 	const mode = ref('round');
@@ -146,7 +148,7 @@
 	}
 
 	onLoad(() => {
-		console.log("load")
+		iStatusBarHeight.value = uni.getSystemInfoSync().statusBarHeight;
 	})
 	onReady(() => {
 		// #ifdef  MP-WEIXIN
@@ -206,13 +208,14 @@
 
 		/*  #ifdef  MP-WEIXIN  */
 		:deep(.uni-searchbar) {
+			padding-top: 10rpx !important;
 			width: 65%;
 		}
 
 		/*  #endif  */
 
 		.status_bar {
-			height: var(--status-bar-height);
+			// height: var(--status-bar-height);
 			width: 100%;
 		}
 

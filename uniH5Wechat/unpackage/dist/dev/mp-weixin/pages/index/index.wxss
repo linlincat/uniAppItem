@@ -57,10 +57,10 @@
   background-image: linear-gradient(to right, #f5bf4b, #f7d758);
 }
 .m-content.data-v-1cf27b2a .uni-searchbar {
+  padding-top: 10rpx !important;
   width: 65%;
 }
 .m-content .status_bar.data-v-1cf27b2a {
-  height: var(--status-bar-height);
   width: 100%;
 }
 .m-content .search-box.data-v-1cf27b2a {

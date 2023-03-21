@@ -40,6 +40,7 @@ const _sfc_main = {
     }, {
       imgUrl: "https://tse4-mm.cn.bing.net/th/id/OIP-C.otskqYac6Har5XPjFnRcXAHaEK?pid=ImgDet&rs=1"
     }]);
+    const iStatusBarHeight = common_vendor.ref(0);
     const current = common_vendor.ref(0);
     const swiperDotIndex = common_vendor.ref(0);
     const mode = common_vendor.ref("round");
@@ -50,84 +51,85 @@ const _sfc_main = {
       current.value = e.detail.current;
     }
     common_vendor.onLoad(() => {
-      console.log("load");
+      iStatusBarHeight.value = common_vendor.index.getSystemInfoSync().statusBarHeight;
     });
     common_vendor.onReady(() => {
     });
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.p({
+        a: iStatusBarHeight.value + "px",
+        b: common_vendor.p({
           color: "#999999",
           size: "18",
           type: "home"
         }),
-        b: common_vendor.p({
+        c: common_vendor.p({
           radius: "50",
           placeholder: "今天等文章有新款哈",
           ["cancel-text"]: "取消"
         }),
-        c: common_vendor.f(info, (item, index, i0) => {
+        d: common_vendor.f(info, (item, index, i0) => {
           return {
             a: item.imgUrl,
             b: common_vendor.n("swiper-item" + index),
             c: index
           };
         }),
-        d: common_vendor.o(change),
-        e: swiperDotIndex.value,
-        f: common_vendor.o(clickItem),
-        g: common_vendor.p({
+        e: common_vendor.o(change),
+        f: swiperDotIndex.value,
+        g: common_vendor.o(clickItem),
+        h: common_vendor.p({
           info,
           current: current.value,
           mode: mode.value,
           ["dots-styles"]: dotsStyle,
           field: "content"
         }),
-        h: common_vendor.p({
+        i: common_vendor.p({
           ["tag-title"]: "精美猫咪",
           ["tag-descript"]: "长毛猫、短毛猫、无毛猫"
         }),
-        i: common_vendor.p({
+        j: common_vendor.p({
           span: 12
         }),
-        j: common_vendor.p({
+        k: common_vendor.p({
           ["tag-title"]: "猫咪套图",
           ["tag-descript"]: "热门+精选+新图"
         }),
-        k: common_vendor.p({
+        l: common_vendor.p({
           span: 12
         }),
-        l: common_vendor.p({
+        m: common_vendor.p({
           gutter: 20
         }),
-        m: common_vendor.p({
+        n: common_vendor.p({
           ["tag-title"]: "发现",
           ["tag-descript"]: "发现有趣的文章"
         }),
-        n: common_vendor.p({
+        o: common_vendor.p({
           span: 8
         }),
-        o: common_vendor.p({
+        p: common_vendor.p({
           ["tag-title"]: "任务",
           ["tag-descript"]: "给自己定的小目标"
         }),
-        p: common_vendor.p({
+        q: common_vendor.p({
           span: 8
         }),
-        q: common_vendor.p({
+        r: common_vendor.p({
           ["tag-title"]: "省钱",
           ["tag-descript"]: "东南西北风"
         }),
-        r: common_vendor.p({
+        s: common_vendor.p({
           span: 8
         }),
-        s: common_vendor.p({
+        t: common_vendor.p({
           gutter: 20
         }),
-        t: common_vendor.p({
+        v: common_vendor.p({
           ["m-title"]: "热门推荐"
         }),
-        v: common_vendor.p({
+        w: common_vendor.p({
           ["m-title"]: "最新推荐"
         })
       };
