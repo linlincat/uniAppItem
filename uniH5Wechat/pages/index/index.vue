@@ -62,7 +62,7 @@
 			<!-- 标题 -->
 			<m-title m-title="热门推荐"></m-title>
 			<!-- 横向滚动 -->
-			<view>
+			<view style="width: 100%;">
 				<scroll-view show-scrollbar="true" class="scroll-view_H" scroll-x="true">
 					<view class="scroll-view-item_H">
 						<image src="https://img.yostatic.com/ffuo918/202010/210b49bb67fe4cd6a15f5b51ae03899f.jpg"
@@ -80,7 +80,7 @@
 					<view class="scroll-view-item_H">
 						<image src="https://image.9game.cn/2020/9/19/177125243.jpg" mode="aspectFill"></image>
 					</view>
-					<view class="scroll-view-item_H" style="margin-right: 20px;">
+					<view class="scroll-view-item_H" style="margin-right: 26rpx;">
 						<image src="../../static/swiper/m2.jpg" mode="aspectFill"></image>
 					</view>
 				</scroll-view>
@@ -260,9 +260,8 @@
 
 
 	.scroll-view_H {
-		margin-left: 16rpx;
+		// margin-left: 16rpx;
 		white-space: nowrap;
-		width: 100%;
 		display: flex;
 		justify-content: space-around;
 	}

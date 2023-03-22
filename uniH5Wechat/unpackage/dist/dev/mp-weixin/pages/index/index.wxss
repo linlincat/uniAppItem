@@ -95,9 +95,7 @@
   border-radius: 20rpx;
 }
 .scroll-view_H.data-v-1cf27b2a {
-  margin-left: 16rpx;
   white-space: nowrap;
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
